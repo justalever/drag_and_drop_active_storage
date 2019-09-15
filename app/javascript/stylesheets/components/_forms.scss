@@ -1,4 +1,6 @@
-/* Forms */
+@import "dropzone/dist/min/dropzone.min.css";
+@import "dropzone/dist/min/basic.min.css";
+
 .input {
   @apply appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight;
 }
@@ -14,9 +16,21 @@
 .select {
   @apply appearance-none py-3 px-4 pr-8 block w-full bg-gray-100 border border-gray-300 text-gray-700
    rounded leading-tight;
-   -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .select:focus {
   @apply outline-none bg-white border-gray-400;
+}
+
+.dropzone {
+  @apply border-2 rounded-lg border-gray-400 border-dashed;
+
+  &.dz-drag-hover {
+    @apply border-2 rounded-lg border-gray-200 border-dashed;
+
+    .dz-message {
+      opacity: 0.9;
+    }
+  }
 }

@@ -1,0 +1,20 @@
+<div class="max-w-4xl m-auto">
+  <%= link_to @post do %>
+    <%= image_tag @post.feature_image if @post.feature_image.present? %>
+  <% end %>
+
+  <div class="p-6">
+    <h1 class="text-2xl font-bold"><%= link_to @post.title, @post %></h1>
+
+    <div class="leading-normal text-lg">
+      <%= @post.body %>
+    </div>
+
+    <% if user_signed_in? && current_user.id == @post.id %>
+      <div class="my-4">
+        <%= link_to 'Edit', edit_post_path(@post), class: "btn btn-default" %>
+        <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
+    </div>
+    <% end %>
+  </div>
+</div>
