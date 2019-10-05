@@ -1,24 +1,21 @@
-# README
+# Ruby on Rails Drag and Drop Uploads with Active Storage, Stimulus.js and Dropzone.js
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This tutorial is about using Active Storage from Ruby on Rails 6.0 to create a drag and drop upload experience from scratch using Stimulus.js and Dropzone.js.
 
-Things you may want to cover:
+Objective
 
-* Ruby version
+The goal of this experience is to introduce drag and drop functionality and tie it to Rails Active Storage behind the scenes. I want to be able to drag and drop multiple files for upload as well as pass options that regulate what conditions can be passed around those files. Those conditions could be anything from image type to file size and more.
 
-* System dependencies
+### Objective
 
-* Configuration
+The goal of this experience is to introduce drag and drop functionality and tie it to Rails Active Storage behind the scenes. I want to be able to drag and drop multiple files for upload as well as pass options that regulate what conditions can be passed around those files. Those conditions could be anything from image type to file size and more. 
 
-* Database creation
+**Dependencies:**
 
-* Database initialization
+- [Stimulus JS](https://stimulusjs.org/)
+- [Dropzone JS](https://www.dropzonejs.com/)
+- [Webpack/Rails 6.0](https://rubyonrails.org/)
+- [Kickoff Tailwind](https://github.com/justalever/kickoff_tailwind) (My personal starter template for Rails apps)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Continue reading here: https://web-crunch.com/rails-drag-drop-active-storage-stimulus-dropzone/
